@@ -140,7 +140,10 @@ const educationInfo = {
       duration: "January 2016 - April 2021",
       desc: "Took courses about Software Engineering, Discreate Mathematics, Operating Systems, etc.....",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Participated in cultural events at university.",
+        "Showcased creativity by decorating various university events.",
+        "Cherish fond memories of these experiences.",
+        "Appreciate the university despite not being the top choice.",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     },
@@ -218,7 +221,12 @@ const workExperiences = {
       company: "BITM",
       companylogo: require("./assets/images/logo_bitm.png"),
       date: "May 2019 – July. 2019",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "In 2019, during my internship at BITM, I honed my Android development skills. I successfully crafted projects like TourMate and a Daily Expense Tracker. These experiences equipped me with practical knowledge in mobile app development, user interface design, and database management.",
+      descBullets: [
+        " #AndroidDeveloper - ",
+        " #MobileAppDevelopment - ",
+        " #EfficiencyEnthusiast - "
+      ]
     }
   ]
 };
@@ -255,7 +263,7 @@ const bigProjects = {
       projectDesc: "SAU Directory Flutter App is my first flutter app. I've worked in this project with flutter because of client's need. And For this project i've expolore my new skill in developing flutter apps.",
       footerLink: [
         {
-          name: "Visit App in Playstore",
+          name: "Application under development",
           url: "#"
         }
       ]
