@@ -38,6 +38,7 @@ const socialMediaLinks = {
   gmail: "jonyszone@gmail.com",
  // gitlab: "https://gitlab.com/saadpasta",
   facebook: "https://www.facebook.com/itsmeshafiul",
+  twitter: "https://twitter.com/JONYSZONE",
   medium: "https://medium.com/@jonyszone",
  // stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -76,31 +77,31 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-android"
     },
     {
-      skillName: "css3",
+      skillName: "Flutter",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
+      skillName: "Java",
       fontAwesomeClassname: "fab fa-sass"
     },
     {
-      skillName: "JavaScript",
+      skillName: "Kotlin",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
+      skillName: "Dart",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
+      skillName: "Retrofit",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
+      skillName: "Volley",
       fontAwesomeClassname: "fab fa-swift"
     },
     {
-      skillName: "npm",
+      skillName: "MVVM",
       fontAwesomeClassname: "fab fa-npm"
     },
     {
@@ -108,7 +109,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
+      skillName: "RxJava",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
@@ -116,11 +117,11 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "python",
+      skillName: "Provider",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
+      skillName: "Push Notification",
       fontAwesomeClassname: "fab fa-docker"
     }
   ],
@@ -149,7 +150,12 @@ const educationInfo = {
       subHeader: "Intermediate of Science",
       duration: "September 2011 - April 2014",
       desc: "Ranked top 10% in the program. Took courses about science subjects ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      descBullets: [
+        "Activities and societies: Playing sports in an organized competitive association.",
+        "Doing sports for fun (football, cricket, long-distance running, badminton).",
+        "Participating in outdoor activities (football, cricket, badminton) and physical fitness training (swimming) Taking lessons (swimming)."
+    
+    ]
     }
   ]
 };
@@ -160,19 +166,27 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Android App Development", //Insert stack or technology you have experience in
+      progressPercentage: "95%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "IOS App Development", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
+      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      progressPercentage: "71%" //Insert relative proficiency in percentage
+    },
+    {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "65%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "71%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -185,10 +199,11 @@ const workExperiences = {
       company: "SEO Expate Bangladesh ltd.",
       companylogo: require("./assets/images/seoexpate.png"),
       date: "July 2022 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Experienced Android Developer with 1+ years of dedicated work in crafting management-focused mobile applications. 📱 Passionate about delivering efficient, user-friendly solutions to streamline business processes. 💼 Skilled in Java/Kotlin, UI/UX design, and collaborating with cross-functional teams to turn ideas into impactful apps. Let's connect to discuss how I can contribute to your next project!",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        " #AndroidDeveloper - ",
+        " #MobileAppDevelopment - ",
+        " #EfficiencyEnthusiast - "
       ]
     },
    /* {
@@ -202,7 +217,7 @@ const workExperiences = {
       role: "Android Developer Intern",
       company: "BITM",
       companylogo: require("./assets/images/logo_bitm.png"),
-      date: "Jan 2019 – Sep 2019",
+      date: "May 2019 – July. 2019",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
@@ -237,11 +252,11 @@ const bigProjects = {
     {
       //image: require("./assets/images/nextuLogo.webp"),
       projectName: "SAU Directory Flutter App",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "SAU Directory Flutter App is my first flutter app. I've worked in this project with flutter because of client's need. And For this project i've expolore my new skill in developing flutter apps.",
       footerLink: [
         {
           name: "Visit App in Playstore",
-          url: " "
+          url: "#"
         }
       ]
     }
@@ -259,9 +274,9 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Certified C++ And Java Developer",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "I've completed a course to learn programming fundamentals",
       image: require("./assets/images/codeInLogo.webp"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
@@ -280,9 +295,9 @@ const achievementSection = {
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Certified Android App Developer",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+        "Developed tourism and daily expense when i was working in BITM",
       image: require("./assets/images/googleAssistantLogo.webp"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
@@ -294,8 +309,8 @@ const achievementSection = {
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      title: "Mobile Application Developer",
+      subtitle: "Awarded Certifcation from App Development Team of SEO Expate Bangladesh.",
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
