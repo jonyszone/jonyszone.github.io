@@ -1,6 +1,6 @@
 {
-  "homepage": "https://jonyszone.github.io/",
-  "name": "developerfolio",
+  "homepage": "https://shafi-portfolio-one.vercel.app/",
+  "name": "shafiportfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
