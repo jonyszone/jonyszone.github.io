@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Shafi UL Islam",
-  title: "Android Developer",
+  title: "Senior Software Engineer",
   subTitle: emoji(
-    "A passionate Android Application Developer 🚀 having an experience of building Mobile applications with Java / Kotlin / Android / Flutter and some other cool libraries and frameworks."
+    "A Senior Software Engineer 🚀 with 5+ years of experience building Mobile applications with Java / Kotlin / Android / Flutter — currently at Cyberdyne Technology Ltd."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1LG2h1VHCMvjhe_8PHtbJMZBTarFYhXVa/view?usp=drive_link", // Set to empty to hide the button
@@ -190,33 +190,50 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
+      role: "Senior Software Engineer",
+      company: "Cyberdyne Technology Ltd.",
+      companylogo: require("./assets/images/cyberdyne.png"), // Cyberdyne Technology Ltd
+      date: "September 2025 – Present",
+      desc: "Leading mobile application development as a Senior Software Engineer, architecting scalable solutions and mentoring junior developers across cross-functional teams.",
+      descBullets: [
+        "Architecting and delivering production-grade mobile applications",
+        "Leading code reviews and enforcing engineering best practices",
+        "Collaborating with product and design teams on feature roadmaps"
+      ]
+    },
+    {
+      role: "Mobile Application Developer",
+      company: "Krazy IT Pty Ltd.",
+      companylogo: require("./assets/images/krazyit.webp"), // Krazy IT Pty Ltd
+      date: "October 2023 – January 2025",
+      desc: "Developed and shipped cross-platform mobile applications for Australian clients, working in an agile environment with a focus on performance and clean architecture.",
+      descBullets: [
+        "Built Flutter and native Android apps for client projects",
+        "Integrated REST APIs, Firebase, and third-party SDKs",
+        "Maintained CI/CD pipelines and app store deployments"
+      ]
+    },
+    {
       role: "Android App Developer",
-      company: "SEO Expate Bangladesh ltd.",
+      company: "SEO Expate Bangladesh Ltd.",
       companylogo: require("./assets/images/seoexpate.png"),
-      date: "July 2022 – Present",
-      desc: "Experienced Android Developer crafting management-focused mobile applications. Skilled in Java/Kotlin, UI/UX design, and collaborating with cross-functional teams to deliver efficient, user-friendly solutions that streamline business processes.",
+      date: "July 2022 – October 2023",
+      desc: "Crafted management-focused Android applications. Skilled in Java/Kotlin, UI/UX design, and collaborating with cross-functional teams to deliver efficient, user-friendly solutions.",
       descBullets: [
         "Built and maintained the SEO School Management Android app",
         "Integrated Firebase, Retrofit, and third-party SDKs",
         "Followed MVVM architecture and clean code principles"
       ]
     },
-   /* {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },   */
     {
       role: "Android Developer Intern",
       company: "BITM",
       companylogo: require("./assets/images/logo_bitm.png"),
-      date: "May 2019 – July. 2019",
-      desc: "Honed Android development skills during internship at BITM. Successfully built TourMate and a Daily Expense Tracker, gaining practical experience in mobile app development, UI design, and SQLite database management.",
+      date: "May 2019 – July 2019",
+      desc: "Honed Android development skills during internship at BITM. Built TourMate and a Daily Expense Tracker, gaining practical experience in mobile app development and SQLite.",
       descBullets: [
         "Built TourMate — a travel companion Android app",
         "Developed Daily Expense Tracker with SQLite",
