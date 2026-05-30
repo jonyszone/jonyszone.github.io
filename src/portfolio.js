@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "Shafi UL Islam",
-  title: "Hi all, I'm Shafi UL Islam",
+  title: "Android Developer",
   subTitle: emoji(
     "A passionate Android Application Developer 🚀 having an experience of building Mobile applications with Java / Kotlin / Android / Flutter and some other cool libraries and frameworks."
   ),
@@ -49,8 +49,8 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Build",
+  subTitle: "ANDROID DEVELOPER PASSIONATE ABOUT BUILDING GREAT MOBILE EXPERIENCES",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your mobile applications"
@@ -78,51 +78,47 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Flutter",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      fontAwesomeClassname: "fas fa-mobile-alt"
     },
     {
       skillName: "Java",
-      fontAwesomeClassname: "fab fa-sass"
+      fontAwesomeClassname: "fab fa-java"
     },
     {
       skillName: "Kotlin",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: "fas fa-code"
     },
     {
       skillName: "Dart",
-      fontAwesomeClassname: "fab fa-react"
+      fontAwesomeClassname: "fas fa-bullseye"
     },
     {
-      skillName: "Retrofit",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
     },
     {
-      skillName: "Volley",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "MVVM",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "RxJava",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
+      skillName: "Firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "Provider",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "Push Notification",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "REST API",
+      fontAwesomeClassname: "fas fa-network-wired"
+    },
+    {
+      skillName: "MVVM",
+      fontAwesomeClassname: "fas fa-layer-group"
+    },
+    {
+      skillName: "Play Store",
+      fontAwesomeClassname: "fab fa-google-play"
+    },
+    {
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -143,8 +139,7 @@ const educationInfo = {
         "Participated in cultural events at university.",
         "Showcased creativity by decorating various university events.",
         "Cherish fond memories of these experiences.",
-        "Appreciate the university despite not being the top choice.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Appreciate the university despite not being the top choice."
       ]
     },
     {
@@ -202,11 +197,11 @@ const workExperiences = {
       company: "SEO Expate Bangladesh ltd.",
       companylogo: require("./assets/images/seoexpate.png"),
       date: "July 2022 – Present",
-      desc: "Experienced Android Developer with 1+ years of dedicated work in crafting management-focused mobile applications. 📱 Passionate about delivering efficient, user-friendly solutions to streamline business processes. 💼 Skilled in Java/Kotlin, UI/UX design, and collaborating with cross-functional teams to turn ideas into impactful apps. Let's connect to discuss how I can contribute to your next project!",
+      desc: "Experienced Android Developer crafting management-focused mobile applications. Skilled in Java/Kotlin, UI/UX design, and collaborating with cross-functional teams to deliver efficient, user-friendly solutions that streamline business processes.",
       descBullets: [
-        " #AndroidDeveloper - ",
-        " #MobileAppDevelopment - ",
-        " #EfficiencyEnthusiast - "
+        "Built and maintained the SEO School Management Android app",
+        "Integrated Firebase, Retrofit, and third-party SDKs",
+        "Followed MVVM architecture and clean code principles"
       ]
     },
    /* {
@@ -221,11 +216,11 @@ const workExperiences = {
       company: "BITM",
       companylogo: require("./assets/images/logo_bitm.png"),
       date: "May 2019 – July. 2019",
-      desc: "In 2019, during my internship at BITM, I honed my Android development skills. I successfully crafted projects like TourMate and a Daily Expense Tracker. These experiences equipped me with practical knowledge in mobile app development, user interface design, and database management.",
+      desc: "Honed Android development skills during internship at BITM. Successfully built TourMate and a Daily Expense Tracker, gaining practical experience in mobile app development, UI design, and SQLite database management.",
       descBullets: [
-        " #AndroidDeveloper - ",
-        " #MobileAppDevelopment - ",
-        " #EfficiencyEnthusiast - "
+        "Built TourMate — a travel companion Android app",
+        "Developed Daily Expense Tracker with SQLite",
+        "Learned Android lifecycle, fragments, and RecyclerView"
       ]
     }
   ]
@@ -284,48 +279,39 @@ const achievementSection = {
     {
       title: "Certified C++ And Java Developer",
       subtitle:
-        "I've completed a course to learn programming fundamentals",
+        "Completed a comprehensive course covering programming fundamentals with C++ and Java.",
       image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      imageAlt: "C++ Java Certification",
       footerLink: [
         {
-          name: "Certification",
+          name: "View Certification",
           url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
         }
       ]
     },
     {
       title: "Certified Android App Developer",
       subtitle:
-        "Developed tourism and daily expense when i was working in BITM",
+        "Developed TourMate and Daily Expense Tracker apps during internship at BITM.",
       image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      imageAlt: "Android Developer Certification",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Certification",
+          url: "#"
         }
       ]
     },
-
     {
       title: "Mobile Application Developer",
-      subtitle: "Awarded Certifcation from App Development Team of SEO Expate Bangladesh.",
+      subtitle:
+        "Awarded certification from the App Development Team of SEO Expate Bangladesh for outstanding mobile app contributions.",
       image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      imageAlt: "Mobile Developer Award",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View on Play Store",
+          url: "https://play.google.com/store/apps/details?id=com.schoolmanagement.android"
         }
       ]
     }
