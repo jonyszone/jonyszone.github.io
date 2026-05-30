@@ -254,34 +254,75 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "APPS AND PLATFORMS I'VE BUILT ACROSS MOBILE, WEB AND BACKEND",
   projects: [
     {
-      image: require("./assets/images/seo_school.png"),
-      projectName: "SEO School Management Mobile App",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/geekify.png"),
+      projectName: "Geekify — Tech Service Platform",
+      projectDesc:
+        "On-demand tech repair & IT service platform for Australian customers. Built native Android & iOS apps with real-time booking, technician tracking, and payment integration.",
       footerLink: [
         {
-          name: "Visit App in Playsotore",
-          url: "https://play.google.com/store/apps/details?id=com.schoolmanagement.android"
+          name: "Android App",
+          url: "https://play.google.com/store/apps/details?id=com.krazyit.geekify"
+        },
+        {
+          name: "iOS App",
+          url: "https://apps.apple.com/app/1665418506"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      //image: require("./assets/images/nextuLogo.webp"),
-      projectName: "SAU Directory Flutter App",
-      projectDesc: "SAU Directory Flutter App is my first flutter app. I've worked in this project with flutter because of client's need. And For this project i've expolore my new skill in developing flutter apps.",
+      image: require("./assets/images/cyberdyne_full.png"),
+      projectName: "Daily Ibadat — Islamic Companion App",
+      projectDesc:
+        "Full-stack Islamic lifestyle app with prayer times, Quran, and daily worship tracking. Built Android & iOS apps, Laravel REST backend, React web frontend, and explored FastAPI for microservices.",
       footerLink: [
         {
-          name: "Application under development",
+          name: "View Project",
           url: "#"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/pmr.jpg"),
+      projectName: "PMR — Personal Medical Record",
+      projectDesc:
+        "Mobile app for managing personal health records, doctor visits, prescriptions, and medical history. Built for Cyberdyne Technology Ltd.",
+      footerLink: [
+        {
+          name: "View Details",
+          url: "https://cyberdynetechnologyltd.com/service-details/5"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/connect_donor.jpg"),
+      projectName: "Connect Donor — Blood Donation App",
+      projectDesc:
+        "Android app connecting blood donors with recipients in real time. Features location-based donor search, emergency requests, and donor profile management.",
+      footerLink: [
+        {
+          name: "View Details",
+          url: "https://cyberdynetechnologyltd.com/service-details/3"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/seo_school.png"),
+      projectName: "SEO School Management App",
+      projectDesc:
+        "Comprehensive Android school management system covering student records, attendance, exams, results, and HR — deployed across multiple institutions in Bangladesh.",
+      footerLink: [
+        {
+          name: "Play Store",
+          url: "https://play.google.com/store/apps/details?id=com.schoolmanagement.android"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
@@ -297,7 +338,7 @@ const achievementSection = {
       title: "Certified C++ And Java Developer",
       subtitle:
         "Completed a comprehensive course covering programming fundamentals with C++ and Java.",
-      image: require("./assets/images/codeInLogo.webp"),
+      image: require("./assets/images/geekify.png"),
       imageAlt: "C++ Java Certification",
       footerLink: [
         {
@@ -310,7 +351,7 @@ const achievementSection = {
       title: "Certified Android App Developer",
       subtitle:
         "Developed TourMate and Daily Expense Tracker apps during internship at BITM.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      image: require("./assets/images/pmr.jpg"),
       imageAlt: "Android Developer Certification",
       footerLink: [
         {
@@ -323,7 +364,7 @@ const achievementSection = {
       title: "Mobile Application Developer",
       subtitle:
         "Awarded certification from the App Development Team of SEO Expate Bangladesh for outstanding mobile app contributions.",
-      image: require("./assets/images/pwaLogo.webp"),
+      image: require("./assets/images/connect_donor.jpg"),
       imageAlt: "Mobile Developer Award",
       footerLink: [
         {
