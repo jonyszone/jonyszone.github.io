@@ -18,7 +18,7 @@ export default function Greeting() {
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
-            <span className="greeting-tag">{greeting.title}</span>
+            <span className="greeting-tag">Open to opportunities</span>
             <h1 className={isDark ? "dark-mode greeting-text" : "greeting-text"}>
               Hi, I'm{" "}
               <span className="highlight">{greeting.username}</span>{" "}
