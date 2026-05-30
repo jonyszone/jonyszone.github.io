@@ -29,6 +29,7 @@ export default function Skills() {
         </Fade>
         <Fade right duration={1000}>
           <div className="skills-text-div">
+            <p className="section-label">Skills</p>
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >

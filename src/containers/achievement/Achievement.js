@@ -14,6 +14,7 @@ export default function Achievement() {
       <div className="main" id="achievements">
         <div className="achievement-main-div">
           <div className="achievement-header">
+            <p className="section-label">Achievements</p>
             <h1
               className={
                 isDark
