@@ -1,36 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+/* ── Design Tokens ── */
+:root {
+  --color-primary: #7c3aed;
+  --color-primary-light: #a78bfa;
+  --color-primary-dark: #5b21b6;
+  --color-accent: #06b6d4;
+  --color-accent-light: #67e8f9;
+
+  --gradient-primary: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+  --gradient-hero: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+
+  --bg-light: #ffffff;
+  --bg-light-2: #f8fafc;
+  --bg-dark: #0d1117;
+  --bg-dark-2: #161b22;
+
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --text-dark: #f1f5f9;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(124,58,237,0.1);
+  --shadow-lg: 0 12px 40px rgba(124,58,237,0.15);
+  --shadow-glow: 0 0 30px rgba(124,58,237,0.25);
+
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --section-padding: 5rem 0;
+  --container-width: 90%;
+  --container-max: 1200px;
+}
+
+/* ── Custom fonts ── */
 @font-face {
   font-family: "Agustina Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Agustina Regular"),
-    url("./assets/fonts/Agustina.woff") format("woff");
+  src: local("Agustina Regular"), url("./assets/fonts/Agustina.woff") format("woff");
   font-display: swap;
 }
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"),
-    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
-  font-display: swap;
+
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-html,
-body {
+
+html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-light);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
-/* Media Query */
-@media (max-width: 1380px) {
-  html,
+
+/* ── Selection ── */
+::selection {
+  background: rgba(124, 58, 237, 0.2);
+  color: var(--color-primary-dark);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #7c3aed, #06b6d4);
+  border-radius: 3px;
+}
+
+/* ── Focus ── */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+code {
+  font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+}
+
+/* ── Section heading utility ── */
+.section-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin: 0 0 1rem;
+}
+
+/* ── Section label divider ── */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--color-primary, #7c3aed);
+  margin-bottom: 1rem;
+}
+
+.section-label::before,
+.section-label::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  border-radius: 1px;
+}
+
+.section-label::before { width: 24px; }
+.section-label::after  { width: 12px; }
+
+@media (max-width: 768px) {
   body {
-    font-size: rem;
-    line-height: normal;
+    font-size: 0.95rem;
   }
 }
