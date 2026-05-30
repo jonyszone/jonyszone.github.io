@@ -1,7 +1,16 @@
 @import "../_globalColor";
 
+/* ── Dark mode root ── */
 .dark-mode {
   background-color: $darkBackground;
-  color: white;
-  transition: "0.1s";
+  color: $textColorDark;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ── Section container ── */
+.main {
+  width: var(--container-width, 90%);
+  max-width: var(--container-max, 1200px);
+  padding: 5rem 1.25rem;
+  margin: 0 auto;
 }

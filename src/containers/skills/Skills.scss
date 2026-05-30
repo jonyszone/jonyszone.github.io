@@ -3,11 +3,9 @@
 .skills-main-div {
   display: flex;
   width: 100%;
+  gap: 4rem;
+  align-items: center;
   overflow: hidden;
-}
-
-.skills-text-div {
-  margin-left: 50px;
 }
 
 .skills-main-div > * {
@@ -15,50 +13,82 @@
   margin-bottom: 30px;
 }
 
+.skills-text-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .skills-image-div > img {
   max-width: 100%;
   height: auto;
 }
 
+/* ── Section heading ── */
 .skills-heading {
-  font-size: 56px;
-  font-weight: 400;
-}
-.subTitle {
-  color: $subTitle;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  margin: 0;
+  background: $gradientPrimary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-/* Media Query */
+.subTitle {
+  color: $subTitle;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ── Skill bullet list ── */
+.skills-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: $textColor;
+}
+
+.dark-mode .skills-text {
+  color: #94a3b8;
+}
+
+.skills-text-subtitle {
+  font-size: 0.95rem;
+  color: $subTitle;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ── Responsive ── */
 @media (max-width: 1380px) {
   .skills-heading {
-    font-size: 40px;
+    font-size: 2.2rem;
   }
 }
+
 @media (max-width: 768px) {
   .skills-heading {
-    font-size: 30px;
+    font-size: 1.8rem;
     text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
   }
   .skills-main-div {
     flex-direction: column;
+    gap: 2rem;
   }
   .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
+    margin: 0 10px;
   }
   .skills-text {
-    font-size: 16px;
+    font-size: 0.95rem;
   }
   .skills-text-subtitle {
-    font-size: 16px;
+    font-size: 0.85rem;
     text-align: center;
   }
   .skills-image-div {
-    /* display: none; */
     order: 2;
   }
 }

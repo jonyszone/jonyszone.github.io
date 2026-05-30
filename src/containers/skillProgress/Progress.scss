@@ -1,70 +1,109 @@
 @import "../../_globalColor";
 
-.meter {
-  height: 20px;
-  position: relative;
-  background: $progressBarBackground;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  width: var(--container-width, 90%);
+  max-width: var(--container-max, 1200px);
+  padding: 5rem 1.25rem;
+  margin: 0 auto;
 }
+
+/* ── Section heading ── */
+.skills-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0 0 2rem;
+  background: $gradientPrimary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Skill row ── */
+.skill {
+  margin-bottom: 1.25rem;
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $textColor;
+    margin: 0 0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.skill-percentage {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $primaryColor;
+  background: rgba(124, 58, 237, 0.08);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  border-radius: 9999px;
+  padding: 1px 10px;
+  letter-spacing: 0.3px;
+}
+
+.dark-mode .skill p {
+  color: $textColorDark;
+}
+
+/* ── Progress bar track ── */
+.meter {
+  height: 8px;
+  background: rgba(124, 58, 237, 0.1);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+/* ── Progress bar fill ── */
 .meter > span {
   display: block;
   height: 100%;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: $progressBarSpanBG;
+  border-radius: 9999px;
+  background: $gradientPrimary;
+  background-size: 200% 100%;
+  animation: shimmer-bar 2.5s linear infinite;
   position: relative;
-  overflow: hidden;
 }
-.skill {
-  line-height: 3.5vw;
+
+@keyframes shimmer-bar {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
 }
-.skill-bars {
-  font-size: 28px;
-  width: 40%;
-}
-.skills-container {
+
+/* ── Lottie side ── */
+.skills-image {
   display: flex;
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
-}
-.skills-container > * {
-  flex: 1;
-  margin-bottom: 30px;
-}
-.skills-image > img {
-  margin-left: 80px;
-  max-width: 90%;
-  height: auto;
-}
+  justify-content: center;
+  align-items: center;
 
-/* Media Query */
-
-@media (max-width: 1456px) {
-  .skills-bar {
-    line-height: 4rem;
+  img {
+    max-width: 100%;
+    height: auto;
   }
+}
+
+@media (max-width: 1024px) {
   .skills-image {
     display: none;
-    order: 2;
+  }
+  .skills-container {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 768px) {
   .skills-container {
-    flex-direction: column;
+    padding: 3rem 1.25rem;
   }
-  .skills-bar {
-    line-height: 3rem;
-    margin: 20px;
-  }
-  .skills-image {
-    display: none;
-    order: 2;
+  .skill-bars {
+    width: 100%;
   }
 }

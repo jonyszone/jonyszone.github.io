@@ -1,50 +1,45 @@
-.education-heading {
-  font-size: 56px;
-  font-weight: 400;
-}
+@import "../../_globalColor";
 
 .education-section {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  padding: 20px 0px;
-  margin: 0px auto;
-  margin-top: 2rem;
+  width: var(--container-width, 90%);
+  max-width: var(--container-max, 1200px);
+  padding: 5rem 1.25rem;
+  margin: 0 auto;
 }
 
-.education-section > * {
-  flex: 1;
-  margin-bottom: 30px;
+.education-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+  background: $gradientPrimary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.education-text-subtitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $subTitle;
+  margin: 0 0 2rem;
 }
 
 .education-card-container {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-}
-
-@media (max-width: 1380px) {
-  .education-card-container {
-    padding-top: 0px;
-  }
-  .education-heading {
-    font-size: 40px;
-  }
-  .education-text-subtitle {
-    font-size: 18px;
-    text-align: center;
-  }
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
-  .education-card-container {
-    padding-top: 0px;
-  }
   .education-heading {
-    font-size: 30px;
     text-align: center;
   }
   .education-text-subtitle {
-    font-size: 16px;
+    text-align: center;
   }
 }

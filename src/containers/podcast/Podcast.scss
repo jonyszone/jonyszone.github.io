@@ -1,39 +1,45 @@
 @import "../../_globalColor";
 
 .podcast-header-title {
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 0px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+  background: $gradientPrimary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.podcast {
-  width: 600px;
+.podcast-header-subtitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $subTitle;
+  margin: 0 0 2.5rem;
 }
 
 .podcast-main-div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  gap: 1.5rem;
 }
+
+.podcast {
+  width: 100%;
+  max-width: 600px;
+  border-radius: var(--radius-lg, 16px);
+  overflow: hidden;
+}
+
 .subTitle {
   color: $subTitle;
 }
 
 @media (max-width: 768px) {
-  .podcast-header-title {
-    font-size: 30px;
-    text-align: center;
-  }
-  .podcast-header-subtitle {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
-
-  .podcast {
-    width: 300px;
-  }
-  .podcast-main-div {
-    text-align: center;
-  }
+  .podcast-header-title { text-align: center; }
+  .podcast-header-subtitle { text-align: center; }
+  .podcast-main-div { text-align: center; }
 }

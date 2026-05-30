@@ -1,34 +1,35 @@
 @import "../../_globalColor";
 
 .achievement-heading {
-  font-size: 56px;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+  background: $gradientPrimary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
+
 .achievement-subtitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 0px;
-  margin-bottom: 50px;
+  color: $subTitle;
+  margin: 0 0 2.5rem;
 }
+
 .subTitle {
   color: $subTitle;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
-  .achievement-heading {
-    font-size: 40px;
-  }
-}
 @media (max-width: 768px) {
   .achievement-heading {
-    font-size: 30px;
     text-align: center;
   }
   .achievement-subtitle {
-    font-size: 16px;
-    line-height: normal;
     text-align: center;
   }
 }
