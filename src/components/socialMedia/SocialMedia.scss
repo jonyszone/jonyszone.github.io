@@ -1,90 +1,90 @@
 @import "../../_globalColor";
 
 .social-media-div {
-  font-size: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 1rem 0;
 }
 
+/* ── Icon button base ── */
 .icon-button {
-  margin-bottom: 10px;
-}
-
-.icon-button i {
-  color: $textColorDark;
-  border-radius: 2.6rem;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
-  margin: 0 5px;
   position: relative;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 2.6rem;
-  margin-bottom: 10px;
-  transition: 0.2s ease-in;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition);
+
+  i {
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 1;
+    transition: transform var(--transition);
+  }
+
+  /* tooltip */
+  &::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: rgba(15, 23, 42, 0.9);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+
+    i { transform: scale(1.1); }
+
+    &::after {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
 }
 
-.facebook i {
-  background-color: $faceBook;
+/* ── Brand colors ── */
+.facebook i  { background: $faceBook; }
+.linkedin i  { background: $linkedin; }
+.github i    { background: #24292e; }
+.gitlab i    { background: $gitlab; }
+.google i    { background: $google; }
+.twitter i   { background: $twitter; }
+.medium i    { background: #000000; }
+.stack-overflow i { background: $stackoverflow; }
+.kaggle i    { background: $kaggle; }
+.instagram i { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+
+/* ── Hover glow per brand ── */
+.facebook:hover  { box-shadow: 0 6px 20px rgba(59, 89, 152, 0.5); }
+.linkedin:hover  { box-shadow: 0 6px 20px rgba(10, 102, 194, 0.5); }
+.github:hover    { box-shadow: 0 6px 20px rgba(36, 41, 46, 0.5); }
+.twitter:hover   { box-shadow: 0 6px 20px rgba(29, 155, 240, 0.5); }
+.medium:hover    { box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); }
+.instagram:hover { box-shadow: 0 6px 20px rgba(220, 39, 67, 0.4); }
+
+/* ── Dark mode: github icon needs light bg ── */
+.dark-mode .github i {
+  background: #30363d;
 }
 
-.linkedin i {
-  background-color: $linkedin;
-}
-
-.github i {
-  background-color: $github;
-}
-
-.gitlab i {
-  background-color: $gitlab;
-}
-
-.google i {
-  background-color: $google;
-}
-
-.twitter i {
-  background-color: $twitter;
-}
-
-.medium i {
-  background-color: $medium;
-}
-
-.stack-overflow i {
-  background-color: $stackoverflow;
-}
-
-.kaggle i {
-  background-color: $kaggle;
-}
-
-.instagram i {
-  background-color: $instagram;
-}
-
-/* Hover Transition */
-.twitter i:hover,
-.google i:hover,
-.gitlab i:hover,
-.github i:hover,
-.linkedin i:hover,
-.facebook i:hover,
-.instagram i:hover,
-.stack-overflow i:hover,
-.kaggle i:hover,
-.medium i:hover {
-  background-color: $textColor;
-}
-
-/* Media Query */
 @media (max-width: 768px) {
   .social-media-div {
-    text-align: center;
+    justify-content: center;
   }
 }
